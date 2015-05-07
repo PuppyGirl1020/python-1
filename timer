@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+import time as t
+import colors as c
+
+hundreds = 1
+print(c.clear)
+
+while True:
+    t.sleep(.01)
+    print(c.clear)
+    print(c.cyan + '[Control-C to Stop]' + c.reset, end= ': ')
+    print(hundreds)
+    hundreds = hundreds + 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
