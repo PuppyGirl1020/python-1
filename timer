@@ -3,19 +3,31 @@
 import time as t
 import colors as c
 
-hundreds = 1
+hundredths = 0
+seconds = 0
+minutes = 0
+days = 0
+weeks = 0
 print(c.clear)
 
-while True:
-    t.sleep(.01)
+form = c.clear + 
+try:
+    while True:
+    t.sleep(0.01)
+    print('{} weeks {} days {}:{:02}:{:02}:{:02}')
+    print(form.format(weeks,days,hours,minutes,seconds,hundredths))
     print(c.clear)
-    print(c.cyan + '[Control-C to Stop]' + c.reset, end= ': ')
-    print(hundreds)
-    hundreds = hundreds + 1
-
-
-
-
+    hundredths += 1
+    if hundredths == 100:
+        seconds = seconds + 1
+        hundredths = 0
+    if seconds == 60:
+        minutes = minutes + 1
+        seconds = 0
+    if minutes == 60:
+    days = 0
+    if days == 7:
+    weeks = 0
 
 
 
