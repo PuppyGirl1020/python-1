@@ -13,19 +13,19 @@ print(c.clear)
 form = c.clear + 
 try:
     while True:
-    t.sleep(0.01)
-    print('{} weeks {} days {}:{:02}:{:02}:{:02}')
-    print(form.format(weeks,days,hours,minutes,seconds,hundredths))
-    print(c.clear)
-    hundredths += 1
-    if hundredths == 100:
-        seconds = seconds + 1
-        hundredths = 0
-    if seconds == 60:
-        minutes = minutes + 1
-        seconds = 0
-    if minutes == 60:
-    days = 0
+        t.sleep(0.01)
+        print('{} weeks {} days {}:{:02}:{:02}:{:02}')
+        print(form.format(weeks,days,hours,minutes,seconds,hundredths))
+        print(c.clear)
+        hundredths += 1
+        if hundredths == 100:
+            seconds = seconds + 1
+            hundredths = 0
+        if seconds == 60:
+            minutes = minutes + 1
+            seconds = 0
+        if minutes == 60:
+            days = 0
     if days == 7:
     weeks = 0
 
