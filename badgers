@@ -5,6 +5,29 @@ import time as t
 
 count_length = 0.387
 
+snake = '''
+
+                                                              
+                     ,--.                      ,--.           
+  .--.--.          ,--.'|   ,---,          ,--/  /|    ,---,. 
+ /  /    '.    ,--,:  : |  '  .' \      ,---,': / '  ,'  .' | 
+|  :  /`. / ,`--.'`|  ' : /  ;    '.    :   : '/ / ,---.'   | 
+;  |  |--`  |   :  :  | |:  :       \   |   '   ,  |   |   .' 
+|  :  ;_    :   |   \ | ::  |   /\   \  '   |  /   :   :  |-, 
+ \  \    `. |   : '  '; ||  :  ' ;.   : |   ;  ;   :   |  ;/| 
+  `----.   \'   ' ;.    ;|  |  ;/  \   \:   '   \  |   :   .' 
+  __ \  \  ||   | | \   |'  :  | \  \ ,'|   |    ' |   |  |-, 
+ /  /`--'  /'   : |  ; .'|  |  '  '--'  '   : |.  \'   :  ;/| 
+'--'.     / |   | '`--'  |  :  :        |   | '_\.'|   |    \ 
+  `--'---'  '   : |      |  | ,'        '   : |    |   :   .' 
+            ;   |.'      `--''          ;   |,'    |   | ,'   
+            '---'                       '---'      `----'     
+                                                             
+
+'''
+
+while True:
+
 c.clear_screen()
 
 for verse in range(5):
@@ -13,14 +36,14 @@ for verse in range(5):
         print(c.magenta + 'Badgers!'+ c.reset)
         t.sleep(count_length)
 
-    for mushroom in range(2):
-        print(c.red + 'Mushroom!' + c.reset)
-        t.sleep(count_length * 2)
+    if verse < 4:
+        for mushroom in range(2):
+            print(c.red + 'Mushroom!' + c.reset)
+            t.sleep(count_length * 2)
 
-print(c.yellow + 'Snake' + c.clear)
+print(c.yellow + snake + c.reset)
 t.sleep(count_length * 2)
-
-
+c.clear_screen()
 
 
 
