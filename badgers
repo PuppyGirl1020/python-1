@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+
+import colors as c
+import time as t
+
+count_length = 0.387
+
+c.clear_screen()
+
+for verse in range(5):
+
+    for badger in range(11):
+        print(c.magenta + 'Badgers!'+ c.reset)
+        t.sleep(count_length)
+
+    for mushroom in range(2):
+        print(c.red + 'Mushroom!' + c.reset)
+        t.sleep(count_length * 2)
+
+print(c.yellow + 'Snake' + c.clear)
+t.sleep(count_length * 2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
