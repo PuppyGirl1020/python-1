@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import colors as c 
+
+c.clear_screen()
+print(c.magenta + '''
+
+ Elizabeth's AWSM PERF AMAZ  Multiplication Table Program
+
+'''
+)
+
+number = input('pls enter a number') 
+print('here it is')
+
+for m in range(12,0,-1):
+    product = int(number) * m
+    form = '{} x {} = {}'
+    print(form.format(number,m,product))
+    
+
+
+
+
+
+
+
