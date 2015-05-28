@@ -1,0 +1,77 @@
+#!/usr/bin/env python3
+
+import random
+
+import colors as c
+
+print(c.red + '''
+Welcome to Elizabeth's magic eight ball program!
+Enter your question below!
+''' + c.reset)
+
+answers = [
+    c.green + 'Definitely.' + c.reset,
+    c.red + 'Sadly Not.' + c.reset,
+    c.magenta + 'Maybe.' + c.reset,
+    c.blue + 'It Depends.' + c.reset
+]
+
+while True:
+    question = input('--> ' + c.yellow)
+    if question == 'bye' or question == 'goodbye':
+        print('goodbye')
+        exit()
+    elif 'love' in question:
+        print('Do I look like a love expert?')
+        continue
+    elif 'die' in question or 'death' in question:
+        print("Such Deadly questions do not deserve an question, yet.")
+        continue
+    else:
+        answer = random.choice(answers)
+        print(c.blue + answer + c.reset)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
