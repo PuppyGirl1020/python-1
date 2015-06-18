@@ -2,22 +2,55 @@
 
 import colors as c 
 
-print(c.clear)
-print(c.red + '''
+def die():
+    exit()
 
-Who would cross the Bridge Of Death
-Must answer me these questions three
-'Ere me need pizza =^.^= 
+def live():
+    print('Congrats! You Will Live' + c.reset)
 
-''' +  c.reset)
+def ask(question):
+    print(c.red + question + c.reset)
+    answer = input ("> " + c.base3).lower().strip()
+    print(c.reset)
+    return answer
 
-    
+print(c.clear + c.magenta + '''
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+|Who shall past me bridge of death, must answer these three questions!  |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+''' + c.reset)
 
-name = input(c.magenta + 'What is your name ?!? --> ' + c.reset).lower().strip()
-quest = input(c.red + 'What u quest? --> ' + c.reset)
-if name in  ['lancelot', "galahad"]: 
-    color = input(c.cyan + 'What is thou fav colour? --> ' + c.reset)
-    color = input(c.yellow + 'What is a apple? --> ' + c.reset)
+name = ask (c.magenta + 'What is your name ?!? ' + c.reset)
+quest = input(c.magenta + 'What is your quest' + c.reset)
+if name in ['lancelot', "galahad"]:
+    color = input(c.cyan + 'What is your favorite color?' + c.reset)
+    color = input(c.cyan + 'What is an apple' + c.reset)
+
+    if color == 'blue':
+        die()
+            
+elif name in ['kawaii potato']:
+    answer = input(c.red + 'Do you like waffles?' + c.reset)
+    answer = input(c.red + 'Do you like pancakes' + c.reset)
+    answer = input(c.red + ' <.> ' + c.reset)
+    if answer == 'no':
+        die()
+    if answer == 'yes':
+        live()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
