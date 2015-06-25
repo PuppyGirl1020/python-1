@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import colors as c
+from  utils import ask
 
 print(c.clear + c.magenta + '''
 
@@ -8,14 +9,32 @@ Welcome to the PFUDOR Quiz.
 Lets Test Your Knowledge... ^.^
 ''' + c.reset)
 
+def q1():
+    answer = ask('What color is da ALICORNS?')
+    if answer == 'pink':
+        print('And Its a BOOTAFUL COLOR')
+        return True
+    print('That is INCORRECT -/-')
+    return False
+def q2():
+    answer = ask('Where are they dancing?')
+    if answer == 'rainbows':
+        print('Rainbows is CORRECT')
+        return True
+    print('That is Incorrect')
+    return False
 
-
-
-
-
-
-
-
+def q3():
+    answer = ask('Name ONE Word To Describe the texture of the fur')
+    if answer == 'smile':
+        print('Yesssss')
+        return True
+    print('That is Incorrect')
+    return False    
+#-----------
+q1()
+q2()
+q3()
 
 
 
