@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+
+import colors as c 
+from utils import ask
+print(c.clear + c.magenta + '''
+Welcome To Madlib
+''' + c.reset)
+
+text =  c.cyan + '''
+ One day at {friends_name} house. We went outside to play at {place1}
+ it started to rain {liqud1}. A {thing1} hit me. Then I met {famous_person}. 
+ She flew to {place2} without me. D: I started to cry {liqud2} 
+ I woke up to a {person1} smelling me. It actually was a Monkey.
+ I fainted and died of {noun1} That is my STORY ~ {your_name}
+ ''' + c.reset
+
+words = {
+    'friends_name' : None,
+    'place1' : None,
+    'liqud1' : None,
+    'thing1' : None,
+    'famous_person' : None,
+    'place2': None, 
+    'liqud2' : None,
+    'person1' : None,
+    'noun1' : None,
+    'your_name' : None
+    }
+
+for keyword in words:
+    answer = ask(keyword + ': ')
+    words[keyword] = answer
+
+print(c.clear + text.format(**words))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
