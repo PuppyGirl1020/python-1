@@ -1,0 +1,86 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+def ask(question):
+    print(c.magenta + question + c.reset)
+    answer = input ("> " + c.base3).lower().strip()
+    print(c.reset)
+    return answer
+
+ready = ask(c.magenta + 'Ready For A Song? --> ' +  c.reset)
+if ready == 'no':
+    print(c.red + 'Bye - Bye Hater!')
+    exit()
+if ready == 'yes':
+    print(c.clear)
+    
+question = ask(c.orange + 'Do You Like Waffles?? --> ' + c.reset)
+if question == 'no':
+    print(c.red + 'Bai~')
+    exit()
+
+question2 = ask(c.cyan + 'Do You Like Pancakes?? --> ' + c.reset)
+if question2 == 'no':
+    print(c.red + 'Bai~')
+    exit()
+
+question3 = ask(c.yellow + 'Do You Like French Toast?? --> ' + c.reset)
+if question3 == 'no':
+    print(c.red + 'Bai~')
+    exit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
