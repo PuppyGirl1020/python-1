@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+import colors as c
+while True:
+    
+    print(c.red + 'Nyan')
+    print(c.orange + 'Nyan')
+    print(c.yellow + 'Nyan')
+    print(c.green + 'Nyan')
+    print(c.cyan + 'Nyan')
+    print(c.magenta + 'Nyan')
+
+
+
+
+
+
+
+
+
+
+

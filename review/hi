@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 
 import colors as c
+print(c.clear)
+print(c.red + 'Hi, What is your name' + c.reset)
 
-print('Hi, What is your name')
+name = input(c.yellow + '>' + c.reset)
 
-print('Nice to meet you, [name]
-
-name == input 
-
+print(c.magenta + 'Well, nice to meet you, ' +  name)
 
 
 

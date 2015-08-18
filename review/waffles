@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+
+import colors as c
+print(c.clear)
+#-------------------------------
+hi=input('Do you like waffles? -> ')
+
+if hi == 'no':
+    exit()
+elif hi == 'yes':
+    print('yayay me 22222!')
+#-----------------------------
+hey=input('Do you like Pancakes -> ')
+
+if hey == 'no':
+    print('GO BAIII BAIII HATER')
+    exit()
+
+if hey == 'yes':    
+    print('yayyayayaay me 2222!')
+
+#------------------------------
+hello=input('Do you like french toast -> ')
+
+if hello == 'no':
+    print('baii hater')
+    exit()
+
+if hello == 'yes':
+    print('yayay i am getting a mouthfull')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
