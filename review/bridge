@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.clear)
+
+print('''
+Who dares to enter the Bridge??
+Welp, you have to answer these questions
+    ''')
+
+#----------------------------------------------#
+
+print('''
+What is your name?
+''')
+name = input('->')
+if name == 'Maggie':
+    print('No Maggies aloud >:D')
+    exit()    
+ha = input('->')
+if ha == 'Blake':
+    print('Umm... no')
+    exit()
+#------------------------------------------------#
+
+print('''
+What is your quest?
+''')
+
+lol == input('->')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

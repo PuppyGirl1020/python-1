@@ -6,6 +6,7 @@ print(c.clear)
 hi=input('Do you like waffles? -> ')
 
 if hi == 'no':
+    print('Well Baiiiii!')
     exit()
 elif hi == 'yes':
     print('yayay me 22222!')
